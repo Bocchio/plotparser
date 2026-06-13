@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%232b6cb0' d='M2 14V2h1v11h11v1H2z'/%3E%3Cpath fill='none' stroke='%23e53e3e' stroke-width='1.4' d='M3 11c3 0 4-6 7-6'/%3E%3C/svg%3E" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlotParser — Datasheet Plot Digitizer</title>
+  </head>
+  <body>
+    <div id="app">
+      <header id="toolbar"></header>
+      <main id="workspace">
+        <section id="stage-wrap">
+          <div id="stage">
+            <canvas id="stage-canvas"></canvas>
+            <svg id="stage-svg" xmlns="http://www.w3.org/2000/svg"></svg>
+            <canvas id="loupe" width="160" height="160" hidden></canvas>
+            <div id="drop-hint">
+              <div class="drop-hint-inner">
+                <strong>Drop, paste, or open a plot image</strong>
+                <span>PNG / JPG · or drop a <code>.json</code> project to resume</span>
+              </div>
+            </div>
+          </div>
+          <div id="statusbar"></div>
+        </section>
+        <aside id="sidebar"></aside>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

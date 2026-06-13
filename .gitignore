@@ -1,0 +1,5 @@
+node_modules/
+dist/
+verify/*.png
+*.log
+.DS_Store

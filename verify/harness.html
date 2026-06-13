@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PlotParser verify harness</title>
+    <style>
+      html, body { margin: 0; height: 100%; background: #11161d; }
+      #stage { position: absolute; inset: 0; }
+      #stage-canvas, #stage-svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+      #log { position: absolute; right: 8px; top: 8px; z-index: 5; color: #6f6;
+             font: 12px monospace; background: #000a; padding: 6px 8px; white-space: pre; }
+    </style>
+  </head>
+  <body>
+    <div id="stage">
+      <canvas id="stage-canvas"></canvas>
+      <svg id="stage-svg" xmlns="http://www.w3.org/2000/svg"></svg>
+      <canvas id="loupe" width="160" height="160" hidden></canvas>
+    </div>
+    <pre id="log">loading…</pre>
+    <script type="module" src="./harness.ts"></script>
+  </body>
+</html>
